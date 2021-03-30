@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="148dp"
+        android:layout_height="259dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hello"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/iv_eyes"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_head"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/iv_eyebrow"
+        android:layout_width="159dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_head"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/eyebrow" />
+
+    <ImageView
+        android:id="@+id/iv_beard"
+        android:layout_width="123dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="133dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_head"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/beard" />
+
+    <ImageView
+        android:id="@+id/iv_hair"
+        android:layout_width="214dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_eyebrow"
+        app:layout_constraintEnd_toEndOf="@+id/iv_head"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hair" />
+
+    <ImageView
+        android:id="@+id/iv_moustache"
+        android:layout_width="232dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_head"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/moustache" />
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Hello Mr.Head"
+        android:textSize="35sp"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_head"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="25dp"
+        android:text="head"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <CheckBox
+        android:id="@+id/cb_hair"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:text="hair"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cb_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <CheckBox
+        android:id="@+id/cb_moustache"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:text="moustache"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cb_hair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <CheckBox
+        android:id="@+id/cb_eyes"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:text="eyes"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cb_moustache"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <CheckBox
+        android:id="@+id/cb_eyebrow"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:text="eyebrow"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cb_eyes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <CheckBox
+        android:id="@+id/cb_beard"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:text="beard"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/cb_eyebrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
